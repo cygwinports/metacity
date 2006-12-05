@@ -3,31 +3,31 @@ metacity
 Window manager used primarily by the GNOME Desktop.
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  GConf2-2.14.0-2
-  atk-1.10.3-1
-  gtk2-x11-2.8.17-1
-  libICE6-1.0.0-1
-  libSM6-1.0.0-1
-  libX11_6-1.0.0-2
-  libXcursor1-1.1.5.2-1
-  libXext6-1.0.0-1
-  libXrandr2-1.1.0.2-1
+  cygwin-1.5.22-1
+  GConf2-2.16.0-1
+  atk-1.12.3-1
+  gtk2-x11-2.10.6-1
+  libICE6-1.0.2-1
+  libSM6-1.0.2-1
+  libX11_6-1.1.1-1
+  libXcursor1-1.1.8-1
+  libXext6-1.0.2-1
+  libXrandr2-1.1.2-1
   startup-notification-0.8-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   intltool-0.35.0-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  pkg-config-0.21-1
   sed-4.1.5-1
 
 Canonical homepage:
@@ -39,15 +39,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack metacity-2.14.5-1-src.tar.bz2
+  unpack metacity-2.16.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./metacity-2.14.5-1.cygport all
+  cygport ./metacity-2.16.3-1.cygport all
 
 This will create:
-  /usr/src/metacity-2.14.5-1-src.tar.bz2
-  /usr/src/metacity-2.14.5-1.tar.bz2
+  /usr/src/metacity-2.16.3-1-src.tar.bz2
+  /usr/src/metacity-2.16.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -61,6 +61,7 @@ Files included in the binary package:
   /usr/bin/metacity-theme-viewer.exe
   /usr/bin/metacity-window-demo.exe
   /usr/bin/metacity.exe
+  /usr/include/metacity-1/metacity-private/boxes.h
   /usr/include/metacity-1/metacity-private/common.h
   /usr/include/metacity-1/metacity-private/gradient.h
   /usr/include/metacity-1/metacity-private/preview-widget.h
@@ -71,14 +72,14 @@ Files included in the binary package:
   /usr/lib/libmetacity-private.la
   /usr/lib/metacity-1/metacity-dialog.exe
   /usr/lib/pkgconfig/libmetacity-private.pc
-  /usr/share/doc/Cygwin/metacity-2.14.5.README
-  /usr/share/doc/metacity-2.14.5/AUTHORS
-  /usr/share/doc/metacity-2.14.5/COPYING
-  /usr/share/doc/metacity-2.14.5/ChangeLog
-  /usr/share/doc/metacity-2.14.5/HACKING
-  /usr/share/doc/metacity-2.14.5/INSTALL
-  /usr/share/doc/metacity-2.14.5/NEWS
-  /usr/share/doc/metacity-2.14.5/README
+  /usr/share/doc/Cygwin/metacity-2.16.3.README
+  /usr/share/doc/metacity-2.16.3/AUTHORS
+  /usr/share/doc/metacity-2.16.3/COPYING
+  /usr/share/doc/metacity-2.16.3/ChangeLog
+  /usr/share/doc/metacity-2.16.3/HACKING
+  /usr/share/doc/metacity-2.16.3/INSTALL
+  /usr/share/doc/metacity-2.16.3/NEWS
+  /usr/share/doc/metacity-2.16.3/README
   /usr/share/gnome/wm-properties/metacity.desktop
   /usr/share/locale/am/LC_MESSAGES/metacity.mo
   /usr/share/locale/ar/LC_MESSAGES/metacity.mo
@@ -86,7 +87,7 @@ Files included in the binary package:
   /usr/share/locale/be/LC_MESSAGES/metacity.mo
   /usr/share/locale/bg/LC_MESSAGES/metacity.mo
   /usr/share/locale/bn/LC_MESSAGES/metacity.mo
-  /usr/share/locale/br/LC_MESSAGES/metacity.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/metacity.mo
   /usr/share/locale/bs/LC_MESSAGES/metacity.mo
   /usr/share/locale/ca/LC_MESSAGES/metacity.mo
   /usr/share/locale/cs/LC_MESSAGES/metacity.mo
@@ -120,15 +121,16 @@ Files included in the binary package:
   /usr/share/locale/ku/LC_MESSAGES/metacity.mo
   /usr/share/locale/lt/LC_MESSAGES/metacity.mo
   /usr/share/locale/lv/LC_MESSAGES/metacity.mo
+  /usr/share/locale/mg/LC_MESSAGES/metacity.mo
   /usr/share/locale/mk/LC_MESSAGES/metacity.mo
   /usr/share/locale/ml/LC_MESSAGES/metacity.mo
   /usr/share/locale/mn/LC_MESSAGES/metacity.mo
+  /usr/share/locale/mr/LC_MESSAGES/metacity.mo
   /usr/share/locale/ms/LC_MESSAGES/metacity.mo
   /usr/share/locale/nb/LC_MESSAGES/metacity.mo
   /usr/share/locale/ne/LC_MESSAGES/metacity.mo
   /usr/share/locale/nl/LC_MESSAGES/metacity.mo
   /usr/share/locale/nn/LC_MESSAGES/metacity.mo
-  /usr/share/locale/no/LC_MESSAGES/metacity.mo
   /usr/share/locale/or/LC_MESSAGES/metacity.mo
   /usr/share/locale/pa/LC_MESSAGES/metacity.mo
   /usr/share/locale/pl/LC_MESSAGES/metacity.mo
@@ -152,6 +154,7 @@ Files included in the binary package:
   /usr/share/locale/wa/LC_MESSAGES/metacity.mo
   /usr/share/locale/xh/LC_MESSAGES/metacity.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/metacity.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/metacity.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/metacity.mo
   /usr/share/man/man1/metacity-theme-viewer.1.gz
   /usr/share/man/man1/metacity-window-demo.1.gz
@@ -249,6 +252,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.16.3-1 -----
+Version bump for GNOME 2.16.
 
 ----- version 2.14.5-1 -----
 Version bump.
