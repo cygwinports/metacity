@@ -21,7 +21,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   intltool-0.35.4-1
@@ -39,15 +39,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack metacity-2.16.5-1-src.tar.bz2
+  unpack metacity-2.16.8-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./metacity-2.16.5-1.cygport all
+  cygport ./metacity-2.16.8-1.cygport all
 
 This will create:
-  /usr/src/metacity-2.16.5-1-src.tar.bz2
-  /usr/src/metacity-2.16.5-1.tar.bz2
+  /usr/src/metacity-2.16.8-1-src.tar.bz2
+  /usr/src/metacity-2.16.8-1.tar.bz2
 
 -------------------------------------------
 
@@ -72,14 +72,14 @@ Files included in the binary package:
   /usr/lib/libmetacity-private.la
   /usr/lib/metacity-1/metacity-dialog.exe
   /usr/lib/pkgconfig/libmetacity-private.pc
-  /usr/share/doc/Cygwin/metacity-2.16.5.README
-  /usr/share/doc/metacity-2.16.5/AUTHORS
-  /usr/share/doc/metacity-2.16.5/COPYING
-  /usr/share/doc/metacity-2.16.5/ChangeLog
-  /usr/share/doc/metacity-2.16.5/HACKING
-  /usr/share/doc/metacity-2.16.5/INSTALL
-  /usr/share/doc/metacity-2.16.5/NEWS
-  /usr/share/doc/metacity-2.16.5/README
+  /usr/share/doc/Cygwin/metacity-2.16.8.README
+  /usr/share/doc/metacity-2.16.8/AUTHORS
+  /usr/share/doc/metacity-2.16.8/COPYING
+  /usr/share/doc/metacity-2.16.8/ChangeLog
+  /usr/share/doc/metacity-2.16.8/HACKING
+  /usr/share/doc/metacity-2.16.8/INSTALL
+  /usr/share/doc/metacity-2.16.8/NEWS
+  /usr/share/doc/metacity-2.16.8/README
   /usr/share/gnome/wm-properties/metacity.desktop
   /usr/share/locale/am/LC_MESSAGES/metacity.mo
   /usr/share/locale/ar/LC_MESSAGES/metacity.mo
@@ -252,6 +252,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.16.8-1 -----
+Version bump.
 
 ----- version 2.16.5-1 -----
 Version bump.
