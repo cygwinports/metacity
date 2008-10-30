@@ -1,4 +1,4 @@
 category: Gnome X11
-requires: cygwin GConf2 atk glib2 gtk2-x11 libICE6 libSM6 libX11_6 libXcursor1 libXext6 libXrandr2 libXrender1 libcairo2 libintl8 pango startup-notification
+requires: cygwin GConf2 atk glib2 gtk2-x11 libICE6 libSM6 libX11_6 libXcomposite1 libXcursor1 libXdamage1 libXext6 libXfixes3 libXrandr2 libXrender1 libcairo2 libintl8 pango startup-notification
 sdesc: "GNOME Desktop window manager"
 ldesc: "Window manager used primarily by the GNOME Desktop."

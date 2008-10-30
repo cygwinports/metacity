@@ -4,6 +4,5 @@ DESCRIPTION="GNOME Desktop window manager"
 
 CYGCONF_ARGS="
 	--libexecdir=/usr/lib/metacity-1
-	--disable-compositor
 	--disable-xinerama
 "
