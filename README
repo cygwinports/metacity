@@ -4,36 +4,36 @@ Window manager used primarily by the GNOME Desktop.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  atk-1.22.0-1
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
+  libatk1.0_0-1.24.0-1
+  libcairo2-1.8.4-1
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
   libICE6-1.0.4-2
+  libintl8-0.17-2
+  libpango1.0_0-1.22.3-1
   libSM6-1.1.0-1
+  libstartup-notification1_0-0.9-1
   libX11_6-1.1.5-1
-  libXcomposite-0.4.0-1
+  libXcomposite1-0.4.0-1
   libXcursor1-1.1.9-2
   libXdamage1-1.1.1-2
-  libXfixes3-4.0.3-2
   libXext6-1.0.4-1
+  libXfixes3-4.0.3-2
   libXrandr2-1.2.3-1
   libXrender1-0.9.4-2
-  libcairo2-1.6.4-1
-  libintl8-0.17-1
-  pango-1.20.5-1
-  startup-notification-0.9-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
-  intltool-0.40.3-1
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
   libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
@@ -48,15 +48,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack metacity-2.22.0-1-src.tar.bz2
+  unpack metacity-2.24.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./metacity-2.22.0-1.cygport all
+  cygport ./metacity-2.24.0-1.cygport all
 
 This will create:
-  /usr/src/metacity-2.22.0-1-src.tar.bz2
-  /usr/src/metacity-2.22.0-1.tar.bz2
+  /usr/src/metacity-2.24.0-1-src.tar.bz2
+  /usr/src/metacity-2.24.0-1.tar.bz2
 
 -------------------------------------------
 
@@ -81,17 +81,18 @@ Files included in the binary package:
   /usr/lib/libmetacity-private.la
   /usr/lib/metacity-1/metacity-dialog.exe
   /usr/lib/pkgconfig/libmetacity-private.pc
-  /usr/share/doc/metacity-2.22.0/AUTHORS
-  /usr/share/doc/metacity-2.22.0/COPYING
-  /usr/share/doc/metacity-2.22.0/ChangeLog
-  /usr/share/doc/metacity-2.22.0/HACKING
-  /usr/share/doc/metacity-2.22.0/INSTALL
-  /usr/share/doc/metacity-2.22.0/MAINTAINERS
-  /usr/share/doc/metacity-2.22.0/NEWS
-  /usr/share/doc/metacity-2.22.0/README
+  /usr/share/applications/metacity.desktop
+  /usr/share/doc/metacity-2.24.0/AUTHORS
+  /usr/share/doc/metacity-2.24.0/COPYING
+  /usr/share/doc/metacity-2.24.0/ChangeLog
+  /usr/share/doc/metacity-2.24.0/HACKING
+  /usr/share/doc/metacity-2.24.0/INSTALL
+  /usr/share/doc/metacity-2.24.0/MAINTAINERS
+  /usr/share/doc/metacity-2.24.0/NEWS
+  /usr/share/doc/metacity-2.24.0/README
   /usr/share/gnome-control-center/keybindings/50-metacity-desktop-key.xml
   /usr/share/gnome-control-center/keybindings/50-metacity-key.xml
-  /usr/share/gnome/wm-properties/metacity.desktop
+  /usr/share/gnome/wm-properties/metacity-wm.desktop
   /usr/share/locale/am/LC_MESSAGES/metacity.mo
   /usr/share/locale/ar/LC_MESSAGES/metacity.mo
   /usr/share/locale/as/LC_MESSAGES/metacity.mo
@@ -130,6 +131,7 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/metacity.mo
   /usr/share/locale/ja/LC_MESSAGES/metacity.mo
   /usr/share/locale/ka/LC_MESSAGES/metacity.mo
+  /usr/share/locale/kn/LC_MESSAGES/metacity.mo
   /usr/share/locale/ko/LC_MESSAGES/metacity.mo
   /usr/share/locale/ku/LC_MESSAGES/metacity.mo
   /usr/share/locale/lt/LC_MESSAGES/metacity.mo
@@ -158,7 +160,7 @@ Files included in the binary package:
   /usr/share/locale/sl/LC_MESSAGES/metacity.mo
   /usr/share/locale/sq/LC_MESSAGES/metacity.mo
   /usr/share/locale/sr/LC_MESSAGES/metacity.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/metacity.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/metacity.mo
   /usr/share/locale/sv/LC_MESSAGES/metacity.mo
   /usr/share/locale/ta/LC_MESSAGES/metacity.mo
   /usr/share/locale/th/LC_MESSAGES/metacity.mo
@@ -281,6 +283,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.24.0-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.0-2 -----
 Enabled XComposite support.
