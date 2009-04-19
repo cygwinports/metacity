@@ -3,41 +3,42 @@ metacity
 Window manager used primarily by the GNOME Desktop.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatk1.0_0-1.24.0-1
-  libcairo2-1.8.6-1
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libICE6-1.0.4-2
-  libintl8-0.17-2
-  libpango1.0_0-1.22.4-1
-  libSM6-1.1.0-1
-  libstartup-notification1_0-0.9-2
-  libX11_6-1.1.5-2
-  libXcomposite1-0.4.0-1
-  libXcursor1-1.1.9-2
-  libXdamage1-1.1.1-2
-  libXext6-1.0.4-1
-  libXfixes3-4.0.3-2
-  libXinerama1-1.0.3-1
-  libXrandr2-1.2.3-1
-  libXrender1-0.9.4-2
+  cygwin-1.7.0-45
+  libatk1.0_0-1.26.0-1
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libICE6-1.0.5-10
+  libintl8-0.17-10
+  libpango1.0_0-1.24.0-1
+  libSM6-1.1.0-10
+  libstartup-notification1_0-0.9-10
+  libX11_6-1.2-10
+  libXcomposite1-0.4.0-10
+  libXcursor1-1.1.9-10
+  libXdamage1-1.1.1-10
+  libXext6-1.0.5-10
+  libXfixes3-4.0.3-10
+  libXinerama1-1.0.3-10
+  libXrandr2-1.3.0-10
+  libXrender1-0.9.4-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -49,20 +50,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack metacity-2.24.0-X-src.tar.bz2
+  unpack metacity-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./metacity-2.24.0-X.cygport all
+  cygport ./metacity-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/metacity-2.24.0-X-src.tar.bz2
-  /usr/src/metacity-2.24.0-X.tar.bz2
+  /usr/src/metacity-2.26.0-X-src.tar.bz2
+  /usr/src/metacity-2.26.0-X.tar.bz2
+  /usr/src/metacity-devel-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(metacity)
   /etc/gconf/schemas/metacity.schemas
   /etc/postinstall/metacity.sh
   /etc/preremove/metacity.sh
@@ -71,32 +74,23 @@ Files included in the binary package:
   /usr/bin/metacity-theme-viewer.exe
   /usr/bin/metacity-window-demo.exe
   /usr/bin/metacity.exe
-  /usr/include/metacity-1/metacity-private/boxes.h
-  /usr/include/metacity-1/metacity-private/common.h
-  /usr/include/metacity-1/metacity-private/gradient.h
-  /usr/include/metacity-1/metacity-private/preview-widget.h
-  /usr/include/metacity-1/metacity-private/theme-parser.h
-  /usr/include/metacity-1/metacity-private/theme.h
-  /usr/include/metacity-1/metacity-private/util.h
-  /usr/lib/libmetacity-private.dll.a
-  /usr/lib/libmetacity-private.la
   /usr/lib/metacity-1/metacity-dialog.exe
-  /usr/lib/pkgconfig/libmetacity-private.pc
   /usr/share/applications/metacity.desktop
-  /usr/share/doc/metacity-2.24.0/AUTHORS
-  /usr/share/doc/metacity-2.24.0/COPYING
-  /usr/share/doc/metacity-2.24.0/ChangeLog
-  /usr/share/doc/metacity-2.24.0/HACKING
-  /usr/share/doc/metacity-2.24.0/INSTALL
-  /usr/share/doc/metacity-2.24.0/MAINTAINERS
-  /usr/share/doc/metacity-2.24.0/NEWS
-  /usr/share/doc/metacity-2.24.0/README
+  /usr/share/doc/metacity/AUTHORS
+  /usr/share/doc/metacity/COPYING
+  /usr/share/doc/metacity/ChangeLog
+  /usr/share/doc/metacity/HACKING
+  /usr/share/doc/metacity/MAINTAINERS
+  /usr/share/doc/metacity/NEWS
+  /usr/share/doc/metacity/README
   /usr/share/gnome-control-center/keybindings/50-metacity-desktop-key.xml
   /usr/share/gnome-control-center/keybindings/50-metacity-key.xml
+  /usr/share/gnome/help/creating-metacity-themes/C/creating-metacity-themes.xml
   /usr/share/gnome/wm-properties/metacity-wm.desktop
   /usr/share/locale/am/LC_MESSAGES/metacity.mo
   /usr/share/locale/ar/LC_MESSAGES/metacity.mo
   /usr/share/locale/as/LC_MESSAGES/metacity.mo
+  /usr/share/locale/ast/LC_MESSAGES/metacity.mo
   /usr/share/locale/az/LC_MESSAGES/metacity.mo
   /usr/share/locale/be/LC_MESSAGES/metacity.mo
   /usr/share/locale/be@latin/LC_MESSAGES/metacity.mo
@@ -105,6 +99,7 @@ Files included in the binary package:
   /usr/share/locale/bn_IN/LC_MESSAGES/metacity.mo
   /usr/share/locale/bs/LC_MESSAGES/metacity.mo
   /usr/share/locale/ca/LC_MESSAGES/metacity.mo
+  /usr/share/locale/ca@valencia/LC_MESSAGES/metacity.mo
   /usr/share/locale/cs/LC_MESSAGES/metacity.mo
   /usr/share/locale/cy/LC_MESSAGES/metacity.mo
   /usr/share/locale/da/LC_MESSAGES/metacity.mo
@@ -122,12 +117,14 @@ Files included in the binary package:
   /usr/share/locale/ga/LC_MESSAGES/metacity.mo
   /usr/share/locale/gl/LC_MESSAGES/metacity.mo
   /usr/share/locale/gu/LC_MESSAGES/metacity.mo
+  /usr/share/locale/ha/LC_MESSAGES/metacity.mo
   /usr/share/locale/he/LC_MESSAGES/metacity.mo
   /usr/share/locale/hi/LC_MESSAGES/metacity.mo
   /usr/share/locale/hr/LC_MESSAGES/metacity.mo
   /usr/share/locale/hu/LC_MESSAGES/metacity.mo
   /usr/share/locale/hy/LC_MESSAGES/metacity.mo
   /usr/share/locale/id/LC_MESSAGES/metacity.mo
+  /usr/share/locale/ig/LC_MESSAGES/metacity.mo
   /usr/share/locale/is/LC_MESSAGES/metacity.mo
   /usr/share/locale/it/LC_MESSAGES/metacity.mo
   /usr/share/locale/ja/LC_MESSAGES/metacity.mo
@@ -135,8 +132,10 @@ Files included in the binary package:
   /usr/share/locale/kn/LC_MESSAGES/metacity.mo
   /usr/share/locale/ko/LC_MESSAGES/metacity.mo
   /usr/share/locale/ku/LC_MESSAGES/metacity.mo
+  /usr/share/locale/la/LC_MESSAGES/metacity.mo
   /usr/share/locale/lt/LC_MESSAGES/metacity.mo
   /usr/share/locale/lv/LC_MESSAGES/metacity.mo
+  /usr/share/locale/mai/LC_MESSAGES/metacity.mo
   /usr/share/locale/mg/LC_MESSAGES/metacity.mo
   /usr/share/locale/mk/LC_MESSAGES/metacity.mo
   /usr/share/locale/ml/LC_MESSAGES/metacity.mo
@@ -164,6 +163,7 @@ Files included in the binary package:
   /usr/share/locale/sr@latin/LC_MESSAGES/metacity.mo
   /usr/share/locale/sv/LC_MESSAGES/metacity.mo
   /usr/share/locale/ta/LC_MESSAGES/metacity.mo
+  /usr/share/locale/te/LC_MESSAGES/metacity.mo
   /usr/share/locale/th/LC_MESSAGES/metacity.mo
   /usr/share/locale/tk/LC_MESSAGES/metacity.mo
   /usr/share/locale/tr/LC_MESSAGES/metacity.mo
@@ -171,9 +171,11 @@ Files included in the binary package:
   /usr/share/locale/vi/LC_MESSAGES/metacity.mo
   /usr/share/locale/wa/LC_MESSAGES/metacity.mo
   /usr/share/locale/xh/LC_MESSAGES/metacity.mo
+  /usr/share/locale/yo/LC_MESSAGES/metacity.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/metacity.mo
   /usr/share/locale/zh_HK/LC_MESSAGES/metacity.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/metacity.mo
+  /usr/share/man/man1/metacity-message.1.gz
   /usr/share/man/man1/metacity-theme-viewer.1.gz
   /usr/share/man/man1/metacity-window-demo.1.gz
   /usr/share/man/man1/metacity.1.gz
@@ -281,54 +283,24 @@ Files included in the binary package:
   /usr/share/themes/Simple/metacity-1/metacity-theme-1.xml
   /usr/share/themes/Simple/metacity-1/minimize.png
 
+(metacity-devel)
+  /usr/include/metacity-1/metacity-private/boxes.h
+  /usr/include/metacity-1/metacity-private/common.h
+  /usr/include/metacity-1/metacity-private/gradient.h
+  /usr/include/metacity-1/metacity-private/preview-widget.h
+  /usr/include/metacity-1/metacity-private/theme-parser.h
+  /usr/include/metacity-1/metacity-private/theme.h
+  /usr/include/metacity-1/metacity-private/util.h
+  /usr/lib/libmetacity-private.dll.a
+  /usr/lib/libmetacity-private.la
+  /usr/lib/pkgconfig/libmetacity-private.pc
+
 ------------------
 
 Port Notes:
 
------ version 2.24.0-2 -----
-Enabled Xinerama support.
-
------ version 2.24.0-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.0-2 -----
-Enabled XComposite support.
-
------ version 2.22.0-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.1-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.5-1 -----
-Version bump for GNOME 2.18.
-
------ version 2.16.8-1 -----
-Version bump.
-
------ version 2.16.5-1 -----
-Version bump.
-
------ version 2.16.3-1 -----
-Version bump for GNOME 2.16.
-
------ version 2.14.5-1 -----
-Version bump.
-
------ version 2.14.3-1 -----
-Version bump for GNOME 2.14.
-
------ version 2.12.3-1 -----
-Version bump.
-
------ version 2.12.2-1 -----
-Version bump for GNOME 2.12.
-
------ version 2.10.3-1 -----
-Update for GNOME 2.10.
-
------ version 2.8.13-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:

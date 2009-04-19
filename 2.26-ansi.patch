@@ -1,0 +1,13 @@
+Unfortunately Cygwin's headers aren't up to this.
+
+--- origsrc/metacity-2.26.0/configure.in	2009-03-16 12:58:12.000000000 -0500
++++ src/metacity-2.26.0/configure.in	2009-04-19 15:08:24.405625000 -0500
+@@ -485,7 +485,7 @@ fi
+ 
+ # Warnings are there for a reason
+ if test "x$GCC" = "xyes"; then
+-  CFLAGS="$CFLAGS -Wall -Werror -ansi"
++  CFLAGS="$CFLAGS -Wall"
+ fi
+ 
+ # Use gnome-doc-utils:

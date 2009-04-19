@@ -1,0 +1,5 @@
+category: Gnome X11
+requires: cygwin metacity libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel gettext libpango1.0-devel
+external-source: metacity
+sdesc: "GNOME Desktop window manager (development)"
+ldesc: "Window manager used primarily by the GNOME Desktop."
