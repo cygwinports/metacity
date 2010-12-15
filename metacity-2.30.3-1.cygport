@@ -2,8 +2,10 @@ inherit gnome2
 
 DESCRIPTION="GNOME Desktop window manager"
 
-PATCH_URI="2.26-ansi.patch
-           2.28.0-parallel-make.patch"
+PATCH_URI="
+	2.30.3-cygwin-ansi.patch
+	2.28.0-parallel-make.patch
+"
 
 PKG_NAMES="${PN} ${PN}-devel"
 PKG_HINTS="setup devel"

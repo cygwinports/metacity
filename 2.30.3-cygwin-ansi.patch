@@ -1,0 +1,10 @@
+--- origsrc/metacity-2.30.3/src/ui/theme.c	2010-09-29 09:56:16.000000000 -0500
++++ src/metacity-2.30.3/src/ui/theme.c	2010-12-14 22:38:29.474383900 -0600
+@@ -61,6 +61,7 @@
+ #include <string.h>
+ #include <stdlib.h>
+ #define __USE_XOPEN
++#undef __STRICT_ANSI__
+ #include <math.h>
+ 
+ #define GDK_COLOR_RGBA(color)                                           \
