@@ -1,0 +1,18 @@
+inherit gnome2
+
+CATEGORY="Gnome X11"
+SUMMARY="GNOME Desktop window manager"
+DESCRIPTION="A window manager for GNOME, with a focus on simplicity and
+usability rather than novelties or gimmicks. It uses GTK+ 2 for drawing window
+frames, so that it inherits colours, fonts, and so on from the GTK+ theme."
+
+PATCH_URI="
+	2.30.3-cygwin-ansi.patch
+"
+
+PKG_NAMES="${PN} ${PN}-devel"
+metacity_REQUIRES="zenity"
+metacity_CONTENTS="etc/ usr/bin/ usr/share/"
+metacity_devel_CONTENTS="usr/include/ usr/lib/"
+
+KEEP_LA_FILES="none"
