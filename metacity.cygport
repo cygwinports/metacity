@@ -1,6 +1,9 @@
 inherit gnome2
 
-CATEGORY="Gnome X11"
+NAME="metacity"
+VERSION=2.34.13
+RELEASE=1
+CATEGORY="GNOME X11"
 SUMMARY="GNOME Desktop window manager"
 DESCRIPTION="A window manager for GNOME, with a focus on simplicity and
 usability rather than novelties or gimmicks. It uses GTK+ 2 for drawing window
@@ -15,4 +18,3 @@ metacity_REQUIRES="zenity"
 metacity_CONTENTS="etc/ usr/bin/ usr/share/"
 metacity_devel_CONTENTS="usr/include/ usr/lib/"
 
-KEEP_LA_FILES="none"
