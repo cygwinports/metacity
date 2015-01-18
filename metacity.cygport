@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="metacity"
 VERSION=3.14.3
-RELEASE=1
+RELEASE=2
 CATEGORY="GNOME X11"
 SUMMARY="GNOME Desktop window manager"
 DESCRIPTION="A window manager for GNOME, with a focus on simplicity and
@@ -10,6 +10,8 @@ usability rather than novelties or gimmicks. It uses GTK+ 2 for drawing window
 frames, so that it inherits colours, fonts, and so on from the GTK+ theme."
 
 PATCH_URI="
+	https://git.gnome.org/browse/metacity/patch/?id=396061c#/metacity-bgo605678.patch
+	https://bug738562.bugzilla-attachments.gnome.org/attachment.cgi?id=288568#/metacity-bgo738562.patch
 	2.30.3-cygwin-ansi.patch
 "
 
