@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="metacity"
-VERSION=3.18.1
+VERSION=3.18.4
 RELEASE=1
 CATEGORY="GNOME X11"
 SUMMARY="GNOME Desktop window manager"
@@ -9,9 +9,19 @@ DESCRIPTION="A window manager for GNOME, with a focus on simplicity and
 usability rather than novelties or gimmicks. It uses GTK+ 2 for drawing window
 frames, so that it inherits colours, fonts, and so on from the GTK+ theme."
 
+SRC_URI+=" https://fedorapeople.org/cgit/yselkowitz/public_git/metacity.git/plain/metacity-theme-2.xml"
+
 PKG_NAMES="${NAME} ${NAME}-devel"
 metacity_REQUIRES="zenity"
-metacity_CONTENTS="etc/ usr/bin/ usr/share/"
+metacity_CONTENTS="usr/bin/ usr/share/"
 metacity_devel_CONTENTS="usr/include/ usr/lib/"
 
 CYGCONF_ARGS="ZENITY=/usr/bin/zenity"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	insinto /usr/share/themes/Adwaita/metacity-1
+	doins ${S}/metacity-theme-2.xml
+}
