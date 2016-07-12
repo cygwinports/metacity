@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="metacity"
-VERSION=3.18.4
+VERSION=3.18.5
 RELEASE=1
 CATEGORY="GNOME X11"
 SUMMARY="GNOME Desktop window manager"
