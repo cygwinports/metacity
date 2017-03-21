@@ -1,0 +1,10 @@
+--- origsrc/metacity-3.22.1/libmetacity/Makefile.am	2016-10-13 16:08:26.000000000 -0500
++++ src/metacity-3.22.1/libmetacity/Makefile.am	2017-03-07 13:59:07.393630200 -0600
+@@ -59,6 +59,7 @@ libmetacity_la_CFLAGS = \
+ 	$(NULL)
+ 
+ libmetacity_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info $(LT_VERSION_INFO) \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
